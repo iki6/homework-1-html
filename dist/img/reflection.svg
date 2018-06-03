@@ -1,0 +1,9 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+      <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%"  stop-color="rgba(255,255,255,.26)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </linearGradient>
+  </defs>
+  <polyline points='0,0 200,0 0,160' fill="url(#gradient)" />
+</svg>

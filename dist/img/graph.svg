@@ -1,0 +1,65 @@
+<svg width="210px" height="55px" viewBox="0 0 210 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+	circle{
+		z-index:3;
+		opacity: 0;
+		animation:circles 1s forwards;
+		animation-delay: 0s
+	}
+	line{
+		z-index:1;
+		stroke-dasharray: 100;
+		stroke-dashoffset: 100;
+		animation: strokes 2s forwards;
+	}
+	line:nth-child(1){
+		animation-delay: 0.6s;
+	}
+	line:nth-child(2){
+		animation-delay: 1.0s;
+	}
+	line:nth-child(3){
+		animation-delay: 1.4s;
+	}
+	line:nth-child(4){
+		animation-delay: 1.8s;
+	}
+	line:nth-child(5){
+		animation-delay: 2.2s;
+	}
+	line:nth-child(6){
+		animation-delay: 2.6s;
+	}
+	@keyframes strokes{
+		100%{
+			stroke-dashoffset: 0
+		}
+	}
+	@keyframes circles{
+		90%{
+			opacity:1;
+			r:3.5
+		}
+		100%{
+			opacity:1;
+			r:3
+		}
+	}
+
+  </style>
+  <g xmlns="http://www.w3.org/2000/svg" id="chart">
+  	<line x1="6" y1="4" x2="44" y2="44" stroke="#832d34" stroke-width="1"/>
+  	<line x1="44" y1="44" x2="64" y2="27" stroke="#832d34" stroke-width="1"/>
+  	<line x1="64" y1="27" x2="106" y2="13" stroke="#832d34" stroke-width="1"/>
+  	<line x1="106" y1="13" x2="150" y2="50" stroke="#832d34" stroke-width="1"/>
+  	<line x1="150" y1="50" x2="175" y2="5" stroke="#832d34" stroke-width="1"/>
+    <line x1="175" y1="5" x2="205" y2="25" stroke="#832d34" stroke-width="1"/>
+  	<circle id="template" cx="6" cy="4" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+  	<circle id="template" cx="44" cy="44" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+  	<circle id="template" cx="64" cy="27" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+  	<circle id="template" cx="106" cy="13" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+  	<circle id="template" cx="150" cy="50" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+  	<circle id="template" cx="175" cy="5" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+    <circle id="template" cx="205" cy="25" r="3" fill="#fff" stroke="#832d34" stroke-width="1"/>
+    </g>
+</svg>

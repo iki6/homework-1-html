@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'dosisLight';
+  src: url("../fonts/Dosis-Light.ttf");
+  src: url("../fonts/Dosis-Light.otf"); }
+
+@font-face {
+  font-family: 'dosisExtraLight';
+  src: url("../fonts/Dosis-ExtraLight.ttf");
+  src: url("../fonts/Dosis-ExtraLight.otf"); }
+
+@font-face {
+  font-family: 'dosisBook';
+  src: url("../fonts/Dosis-Book.ttf"); }
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  margin: 0; }
+
+main {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  text-align: center; }
+  main:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url("../img/city.jpg") center no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-filter: blur(4px);
+            filter: blur(4px); }
+
+@-webkit-keyframes toRegSize {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes toRegSize {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.content {
+  width: 580px;
+  height: 440px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  background: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 0 21px 2px rgba(0, 0, 0, 0.44);
+          box-shadow: 0 0 21px 2px rgba(0, 0, 0, 0.44);
+  overflow: hidden;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-animation: toRegSize 2s forwards;
+          animation: toRegSize 2s forwards; }
+  .content > section {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    width: 50%;
+    height: 100%; }
+  .content__city {
+    background: url("../img/city.jpg") center no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-background-size: 250% 250%;
+            background-size: 250%;
+    background-position: right bottom;
+    position: relative;
+    -webkit-transition: 10s;
+    -o-transition: 10s;
+    transition: 10s; }
+    .content__city:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 70%;
+      background: url("../img/reflection.svg") top left no-repeat;
+      -webkit-background-size: cover !important;
+              background-size: cover !important; }
+    .content__city figure {
+      margin: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: 100%; }
+      .content__city figure > img {
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        padding: 40px 0 50px; }
+  .content__current-weather, .content__current-date {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 25px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    color: #fff; }
+  .content__current-weather {
+    height: 93px;
+    background: rgba(46, 28, 37, 0.89);
+    font-family: dosisExtraLight, sans-serif;
+    font-size: 36px; }
+  .content__current-date {
+    height: 106px;
+    background: rgba(119, 25, 33, 0.89);
+    font-family: dosisLight, sans-serif;
+    font-size: 22px; }
+  .content__weather {
+    padding: 28px 39px 25px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #771921; }
+    .content__weather ul {
+      margin: 0;
+      padding: 0; }
+      .content__weather ul li {
+        list-style-type: none; }
+    .content__weather > ul > li {
+      padding: 15px 0;
+      min-height: 65px; }
+      .content__weather > ul > li:first-child {
+        padding-top: 0; }
+      .content__weather > ul > li:not(:last-child) {
+        border-bottom: 1px solid; }
+  .content__current-degree {
+    font-family: dosisExtraLight;
+    font-size: 101px;
+    line-height: 101px;
+    white-space: nowrap; }
+  .content__forecast {
+    font-family: dosisBook;
+    font-size: 16px; }
+    .content__forecast > ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .content__forecast > ul > li {
+        -webkit-flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; }
+    .content__forecast figure {
+      margin: 0; }
+      .content__forecast figure img {
+        margin-top: 10px; }
+    .content__forecast-day {
+      display: block;
+      padding: 14px 0 10px;
+      border-bottom: 1px solid; }
+    .content__forecast-degree {
+      margin-top: 13px !important; }
+      .content__forecast-degree li:not(:last-child) {
+        margin-bottom: 8px; }
+        .content__forecast-degree li:not(:last-child)--night {
+          color: #332126; }
+  .content__chart {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .content__chart img {
+      margin: auto 0 0; }
