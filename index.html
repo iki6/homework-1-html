@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather widget</title>
     <link rel="stylesheet" type="text/css" href="dist/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
   </head>
@@ -10,18 +11,18 @@
     <main>
       <div class="content">
         <section class="content__city">
-          <figure><img src="dist/img/icons/mainWeatherMark.png" height="145" width="145">
+          <figure><img src="dist/img/clear.svg" height="145" width="145">
             <figcaption><span class="content__current-weather">Sunny</span><span class="content__current-date">Tokyo - Wednesday, July 31</span></figcaption>
           </figure>
         </section>
         <section class="content__weather">
           <ul>
             <li class="content__current-degree">28 &#176;C</li>
-            <li class="content__chart"><img src="dist/img/graph.svg"></li>
+            <li class="content__chart"><img src="dist/img/graph.svg" alt="chart"></li>
             <li class="content__forecast">
               <ul>
                 <li>
-                  <figure><img src="dist/img/icons/forecastImage.png" width="40" height="40">
+                  <figure><img src="dist/img/icons/forecastImage.png" width="40" height="40" alt="weather-preview">
                     <figcaption><span class="content__forecast-day">Thu</span>
                       <ul class="content__forecast-degree">
                         <li class="content__forecast-degree--day">28<span>&#176;C</span></li>
@@ -31,7 +32,7 @@
                   </figure>
                 </li>
                 <li>
-                  <figure><img src="dist/img/icons/forecastImage1.png" width="45" height="40">
+                  <figure><img src="dist/img/icons/forecastImage1.png" width="45" height="40" alt="weather-preview">
                     <figcaption><span class="content__forecast-day">Fri</span>
                       <ul class="content__forecast-degree">
                         <li class="content__forecast-degree--day">22<span>&#176;C</span></li>
@@ -41,7 +42,7 @@
                   </figure>
                 </li>
                 <li>
-                  <figure><img src="dist/img/icons/forecastImage1.png" width="45" height="40">
+                  <figure><img src="dist/img/icons/forecastImage1.png" width="45" height="40" alt="weather-preview">
                     <figcaption><span class="content__forecast-day">Sat</span>
                       <ul class="content__forecast-degree">
                         <li class="content__forecast-degree--day">30<span>&#176;C</span></li>

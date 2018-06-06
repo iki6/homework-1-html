@@ -1,0 +1,35 @@
+<svg width="145px" height="145px" viewBox="0 0 145 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .second-group{
+      transform-origin:50%;
+      transform: rotate(45deg)
+    }
+
+    @keyframes clearWeather{
+    from{transform: rotate(-360deg)}
+    to{transform: rotate(360deg)}
+    }
+
+    .sunny{
+    animation: clearWeather 15s infinite forwards;
+      transform-origin:50%;
+    }
+  </style>
+  <symbol id='sunny'>
+    <g xmlns="http://www.w3.org/2000/svg">
+      <line stroke-linecap="round" x1="73" y1="5" x2="73" y2="25" stroke="#fff" stroke-width="10"/>
+      <line stroke-linecap="round" x1="73" y1="140" x2="73" y2="120" stroke="#fff" stroke-width="10"/>
+      <line stroke-linecap="round" x1="4" y1="73" x2="20" y2="73" stroke="#fff" stroke-width="10"/>
+      <line stroke-linecap="round" x1="140" y1="73" x2="120" y2="73" stroke="#fff" stroke-width="10"/>
+    	<circle id="template" cx="72" cy="72" r="30" fill="none" stroke="#fff" stroke-width="8"/>
+      </g>
+      <g xmlns="http://www.w3.org/2000/svg" class="second-group">
+        <line stroke-linecap="round" x1="73" y1="5" x2="73" y2="25" stroke="#fff" stroke-width="10"/>
+        <line stroke-linecap="round" x1="73" y1="140" x2="73" y2="120" stroke="#fff" stroke-width="10"/>
+        <line stroke-linecap="round" x1="4" y1="73" x2="20" y2="73" stroke="#fff" stroke-width="10"/>
+        <line stroke-linecap="round" x1="140" y1="73" x2="120" y2="73" stroke="#fff" stroke-width="10"/>
+        </g>
+  </symbol>
+
+  <use xlink:href="#sunny" class="sunny" x="0" y="0" height="100%" width="100%"/>
+</svg>

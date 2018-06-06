@@ -59,6 +59,28 @@ main {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+@-webkit-keyframes animateImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes animateImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
 .content {
   width: 580px;
   height: 440px;
@@ -127,7 +149,15 @@ main {
         -webkit-align-self: center;
             -ms-flex-item-align: center;
                 align-self: center;
-        padding: 40px 0 50px; }
+        padding: 40px 0 50px;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-animation: animateImage 5s infinite forwards;
+                animation: animateImage 5s infinite forwards;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
   .content__current-weather, .content__current-date {
     display: -webkit-box;
     display: -webkit-flex;
